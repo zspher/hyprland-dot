@@ -1,5 +1,6 @@
 #!/bin/bash
 
+# install
 pkg=(
     # base
     hyprland-nvidia # or hyprland, hyprland-git
@@ -58,3 +59,6 @@ for p in "${pkg[@]}"; do
     yay -S --noconfirm --needed "$p"
     echo "INSTALLING: " "$p"
 done
+
+# post install
+bat cache --build
