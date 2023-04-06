@@ -30,6 +30,9 @@ pkg=(
     cava
     imagemagick
     fastfetch
+    bat
+    btop
+    starship
 
     ## file manager
     pcmanfm-qt
