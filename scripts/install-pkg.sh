@@ -33,6 +33,8 @@ pkg=(
     bat
     btop
     starship
+    glow
+    xdg-ninja-git
 
     ## file manager
     pcmanfm-qt
@@ -43,7 +45,7 @@ pkg=(
     ffmpegthumbnailer 
 
     #theming
-    nwg-look
+    nwg-look-bin
     qt6ct
     ttf-noto-nerd
     papirus-icon-theme

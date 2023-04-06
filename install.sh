@@ -7,5 +7,5 @@ CONFIGS_DIR="$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd 
 set +a
 
 mkdir -p log
-# ( bash "$SCRIPT_DIR/scripts/configure.sh" )|& tee log/configure.log
+( bash "$SCRIPT_DIR/scripts/configure.sh" )|& tee log/configure.log
 ( bash "$SCRIPT_DIR/scripts/install-pkg.sh" )|& tee log/install.log
