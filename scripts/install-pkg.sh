@@ -53,6 +53,6 @@ pkg=(
 
 
 for p in "${pkg[@]}"; do
-    yay -S "$p"
+    yay -S --noconfirm --needed "$p"
     echo "INSTALLING: " "$p"
 done
