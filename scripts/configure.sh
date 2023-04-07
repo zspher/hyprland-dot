@@ -10,3 +10,4 @@ cp .local/bin ~/.local/bin/wrappedhl -r
 cp .zshenv ~/.zshenv
 
 git clone https://github.com/AstroNvim/AstroNvim ~/.config/nvim
+# git clone https://github.com/portus-zephyr/astrovim_conf ~/.config/nvim/lua/user
