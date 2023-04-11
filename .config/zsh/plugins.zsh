@@ -17,7 +17,8 @@ source "${ZINIT_HOME}/zinit.zsh" \
 
 # Prompt
 zinit lucid for as"command" from"gh-r" \
-    atinit'export N_PREFIX="$HOME/n"; [[ :$PATH: == *":$N_PREFIX/bin:"* ]] || PATH+=":$N_PREFIX/bin"' atload'eval "$(starship init zsh)"' \
+    atload'eval "$(starship init zsh)"' \
+    atpull'starship completions zsh > _starship; zinit creinstall -Q .'\
     starship/starship
 
 ##########################
