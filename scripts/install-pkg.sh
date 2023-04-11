@@ -38,12 +38,15 @@ pkg=(
     xdg-ninja-git
 
     ## file manager
-    pcmanfm-qt
-    file-roller
-    gvfs
-    gvfs-mtp
+    dolphin
+    ark
+    ffmpegthumbs
+    kdegraphics-thumbnailers
+    qt5-imageformats 
+    resvg
+    kde-cli-tools
     ranger
-    ffmpegthumbnailer 
+    ffmpegthumbnailer
 
     #theming
     nwg-look-bin

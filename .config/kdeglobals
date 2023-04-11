@@ -92,6 +92,8 @@ ForegroundPositive=34,161,87
 ForegroundVisited=139,74,176
 
 [General]
+TerminalApplication=kitty
+TerminalService=kitty.desktop
 ColorScheme=Lightly
 Name=Lightly
 shadeSortColumn=true
