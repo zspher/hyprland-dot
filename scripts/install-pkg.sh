@@ -47,11 +47,14 @@ pkg=(
 
     #theming
     nwg-look-bin
-    qt6ct
+    qt5ct-kde
     ttf-noto-nerd
     papirus-icon-theme
     noto-fonts-emoji
     otf-cascadia-code-nerd
+    posy-improved-cursors
+    catppuccin-gtk-theme-mocha
+    papirus-folders-catppuccin-git
 )
 
 
