@@ -37,7 +37,7 @@ zinit lucid for \
   atinit"HIST_STAMPS=dd.mm.yyyy" \
         OMZL::history.zsh
 
-zinit wait lucid for \
+zinit wait"1" lucid for \
     OMZL::clipboard.zsh \
     OMZL::compfix.zsh \
     OMZL::completion.zsh \
@@ -65,7 +65,7 @@ zinit wait lucid for \
 #####################
 # PLUGINS           #
 #####################
-zinit wait lucid for \
+zinit wait"1" lucid for \
         light-mode atinit"ZSH_AUTOSUGGEST_BUFFER_MAX_SIZE=20" atload"_zsh_autosuggest_start" \
     zsh-users/zsh-autosuggestions \
         light-mode atinit"
