@@ -58,6 +58,7 @@ pkg=(
     posy-improved-cursors
     catppuccin-gtk-theme-mocha
     papirus-folders-catppuccin-git
+    lightly-git
 )
 
 

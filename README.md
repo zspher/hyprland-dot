@@ -8,3 +8,8 @@ personal dotfiles for a hyprland desktop
 - endeavoros was used as the base with no DE selected
 - install packages using [install.sh](./install.sh)
 
+### QT theme
+change the contents of `/etc/environment` and add
+```
+QT_QPA_PLATFORMTHEME=qt5ct
+```
