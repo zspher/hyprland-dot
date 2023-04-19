@@ -40,6 +40,7 @@ mk_xdg_dirs() {
     mkfile "$XDG_DATA_HOME" "node_repl_history"
     mkfile "$XDG_CONFIG_HOME"/npm "nmpmrc"
     mkdir -p "$XDG_DATA_HOME"/platformio
+    mkfile "$XDG_CONFIG_HOME"/pulse "cookie"
     mkfile "$XDG_CONFIG_HOME"/openssl "rnd"
     mkdir -p "$XDG_DATA_HOME"/rustup
     # mkdir -p "$XDG_DATA_HOME"/zoom
