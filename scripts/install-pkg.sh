@@ -118,6 +118,7 @@ pkg=(
     glow
     xdg-ninja-git
     dex
+    xdotool
 
     # theming
     nwg-look-bin
