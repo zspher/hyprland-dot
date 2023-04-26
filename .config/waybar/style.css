@@ -201,3 +201,12 @@ tooltip {
 tooltip label {
     color: @text;
 }
+
+#custom-wallpaper {
+    font-size: 20px;
+    background-image: radial-gradient(shade(@base, 0.9) 30%, @mauve 40%);
+    border-radius: 15px;
+    padding: 0 12px;
+    margin-right: 10px;
+    color: @text;
+}
