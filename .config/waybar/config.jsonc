@@ -24,6 +24,9 @@
         "temperature",
         "tray"
     ],
+
+    // * left side * //
+
     "custom/launcher":
     {
         "format": "",
@@ -57,6 +60,9 @@
         "ignore-list": [],
         "app_ids-mapping": {}
     },
+
+    // * center  * //
+
     "clock": {
         "format": " {:%H:%M %Y-%m-%d}",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
@@ -68,6 +74,9 @@
             "deactivated": ""
         }
     },
+
+    // * center  * //
+
     "pulseaudio": {
         // "scroll-step": 1, // %, can be a float
         "format": "{volume}% {icon} {format_source}",
