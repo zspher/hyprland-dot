@@ -98,7 +98,7 @@ pkg=(
     waybar-hyprland # waybar-hyprland-git
     rofi-lbonn-wayland
     swww
-    dunst
+    swaync
     wl-clipboard
     copyq
     wlogout
