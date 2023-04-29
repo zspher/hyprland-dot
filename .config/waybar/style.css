@@ -136,8 +136,8 @@ label:focus {
 
 #tray {
     background-color: shade(@base, 0.9);
-    border-radius: 15px;
-    padding: 0 15px;
+    border-radius: 0 15px 15px 0;
+    padding:0 15px 0 0;
     -gtk-icon-theme: 'Papirus-Dark';
 }
 
@@ -209,4 +209,11 @@ tooltip label {
     padding: 0 12px;
     margin-right: 10px;
     color: @text;
+}
+
+#custom-notification {
+    background-color: shade(@base, 0.9);
+    border-radius: 15px 0 0 15px;
+    padding: 0 10px 0 15px;
+    font-size: 14px
 }
