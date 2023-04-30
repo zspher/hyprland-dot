@@ -31,7 +31,7 @@
     "custom/launcher":
     {
         "format": "",
-        "on-click": "rofi -show drun",
+        "on-click": "~/.config/rofi/bin/run.sh menu",
         "on-click-right": "killall rofi"
     },
     "wlr/workspaces": {
