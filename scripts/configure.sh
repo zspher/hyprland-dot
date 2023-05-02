@@ -1,9 +1,11 @@
 #!/usr/bin/env bash
 
-if ! [ "$SHELL" = "$(which zsh)" ]; then
-    echo "CHANGING SHELL"
-    sudo chsh -s "$(which zsh)" "$USER"
-fi
+change_shell(){
+    if ! [ "$SHELL" = "$(which zsh)" ]; then
+        echo "CHANGING SHELL"
+        sudo chsh -s "$(which zsh)" "$USER"
+    fi
+}
 
 copy_configs (){
     cp .config/* ~/.config -r
@@ -58,6 +60,7 @@ mk_xdg_dirs() {
     mkfile "$XDG_CONFIG_HOME"/nvidia "settings"
 }
 
+change_shell
 copy_configs
 mk_xdg_dirs
 

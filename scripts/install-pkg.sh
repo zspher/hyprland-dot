@@ -20,7 +20,7 @@ pkg=(
 
     # multimedia
     timg
-    qimgv
+    qimgv-git
     graphicsmagick
     gifsicle
     gimp
@@ -40,12 +40,14 @@ pkg=(
     v4l2loopback-dkms
     wf-recorder
     perl-image-exiftool
+    kdeconnect
 
     # utilities
     zsh
     kitty
     less
     dolphin
+    kimageformats
     ffmpegthumbs
     kdegraphics-thumbnailers
     libheif
@@ -70,6 +72,7 @@ pkg=(
     hardinfo-git
     font-manager
     blueman
+    clight
 
     # documents
     neovim
@@ -126,7 +129,7 @@ pkg=(
     ttf-noto-nerd
     papirus-icon-theme
     noto-fonts-emoji
-    otf-cascadia-code-nerd
+    ttf-cascadia-code-nerd
     posy-improved-cursors
     catppuccin-gtk-theme-mocha
     papirus-folders-catppuccin-git
@@ -148,3 +151,4 @@ done
 # post install
 bat cache --build
 sudo systemctl enable --now NetworkManager.service
+yay -Y --editmenu --nodiffmenu --save
