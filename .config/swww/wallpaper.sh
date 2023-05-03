@@ -35,4 +35,4 @@ wallpaper_set(){
 
 base_dir=$(dirname "$(realpath "$0")")
 wallpaper_set
-printf "%s" "󰸉"
+printf "%s" "🖼"
