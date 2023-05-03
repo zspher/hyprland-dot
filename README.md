@@ -56,3 +56,11 @@ To launch hyprland via wrapper `~/.local/bin/wrappedhl`
     Type=Application
     ```
 3. choose `Hyprland Wrapper` in your login manager
+
+### Git Config
+1. add `username` & `email` to `git/config`
+    ```
+    [user]
+        email = <email>
+        name = <username>
+    ```

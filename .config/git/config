@@ -1,0 +1,11 @@
+[user]
+    email = 
+    name = 
+[core]
+    editor = nvim
+[commit]
+    gpgSign = true
+[init]
+    defaultBranch = main
+[status]
+    short = true
