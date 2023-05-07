@@ -30,33 +30,6 @@ to have a unified cursor theme before and after login change
 Inherits=<cursor theme>
 ```
 
-### Hyprland Wrapper
-> see [wrapper](https://wiki.hyprland.org/Getting-Started/Quick-start/#wrapping-the-launcher-recommended)
-
-To launch hyprland via wrapper `~/.local/bin/wrappedhl` 
-
-1. add the ff. file for adding `~/.local/bin` to path
-
-    `/etc/profile.d/home-local-bin.sh`
-    ```sh
-    case ":${PATH}:" in
-      *:"$HOME/.local/bin":*) ;;
-      *) export PATH="$HOME/.local/bin:$PATH" ;;
-    esac
-    ```
-
-2. add the ff. file
-
-    `/usr/share/wayland-sessions`
-    ```ini
-    [Desktop Entry]
-    Name=Hyprland Wrapper
-    Comment=An intelligent dynamic tiling Wayland compositor
-    Exec=wrappedhl
-    Type=Application
-    ```
-3. choose `Hyprland Wrapper` in your login manager
-
 ### Git Config
 1. add `username` & `email` to `git/config`
     ```
