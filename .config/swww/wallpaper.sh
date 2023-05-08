@@ -17,8 +17,9 @@ wallpaper_get(){
 }
 
 wallpaper_set(){
-    local active_wallpaper=$base_dir/wallpaper/$(regex "$(swww query)" "image: (.*)")
-    local wallpaper=$(wallpaper_get)
+    local active_wallpaper wallpaper
+    active_wallpaper=$base_dir/wallpaper/$(regex "$(swww query)" "image: (.*)") 
+    wallpaper=$(wallpaper_get)
 
     while [[ $wallpaper == "$active_wallpaper" ]]; do
         wallpaper=$(wallpaper_get)
