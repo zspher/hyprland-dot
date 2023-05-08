@@ -33,6 +33,8 @@ pkg=(
     spotify
     mpv
     mpv-mpris
+    mpv-sponsorblock-git
+    mpv-uosc-git
     ffmpeg
     handbrake
     # davinci-resolve
@@ -81,6 +83,8 @@ pkg=(
     okular
     masterpdfeditor-free
     tesseract
+    calibre
+    skanpage
     joplin-desktop
     obsidian
 
@@ -132,7 +136,7 @@ pkg=(
     ttf-cascadia-code-nerd
     posy-improved-cursors
     catppuccin-gtk-theme-mocha
-    papirus-folders-catppuccin-git
+    papirus-folders
     lightly-git
     # gtk3-classic
 
