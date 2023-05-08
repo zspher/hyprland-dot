@@ -65,8 +65,9 @@ copy_shot () {
 
 # countdown
 countdown () {
+    local ID=0
     for sec in $(seq "$1" -1 1); do
-        notify-send -t 1000 -r 6 "Taking shot in : $sec"
+        ID=$(notify-send -t 1000 -r "$ID" "Taking shot in : $sec" -p)
         sleep 1
     done
 }
