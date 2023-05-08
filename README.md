@@ -14,7 +14,7 @@ change the contents of `/etc/environment` and add
 QT_QPA_PLATFORMTHEME=qt5ct
 ```
 
-### External Monitor Control
+### External Monitor Backlight Control
 > see [backlight](https://wiki.archlinux.org/title/Backlight#External_monitors)
 
 1. install `ddcutil`
