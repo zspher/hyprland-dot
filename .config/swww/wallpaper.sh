@@ -35,5 +35,9 @@ wallpaper_set(){
 }
 
 base_dir=$(dirname "$(realpath "$0")")
-wallpaper_set
-printf "%s" "🖼"
+if [[ "$1" = -w ]]; then 
+    wallpaper_get
+elif [[ -z "$1" ]]; then
+    wallpaper_set
+    printf "%s" "🖼"
+fi
