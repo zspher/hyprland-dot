@@ -123,6 +123,7 @@ pkg=(
     bat
     starship
     glow
+    vivid
     xdg-ninja-git
     dex
     xdotool

@@ -53,14 +53,9 @@ zinit wait'1' lucid for \
             zstyle ':completion:*:processes' command 'ps -au$USER'
             zstyle ':completion:complete:*:options' sort false" \
     "zsh-users/zsh-completions" \
-        atclone"
-            sed -i '/DIR/c\DIR 38;5;63;1' LS_COLORS;
-            dircolors -b LS_COLORS > clrs.zsh" \
-        atpull'%atclone' pick"clrs.zsh" nocompile'!' \
-        atload'zstyle ":completion:*" list-colors "${(s.:.)LS_COLORS}"' \
-    "trapd00r/LS_COLORS" \
         atinit"
             zstyle ':fzf-tab:*' switch-group ',' '.'
             zstyle ':fzf-tab:complete:_zlua:*' query-string input
             zstyle ':fzf-tab:complete:kill:argument-rest' extra-opts --preview=$extract'ps --pid=$in[(w)1] -o cmd --no-headers -w -w' --preview-window=down:3:wrap" \
+        atload'zstyle ":completion:*" list-colors "${(s.:.)LS_COLORS}"' \
     "Aloxaf/fzf-tab"

@@ -48,6 +48,7 @@ export FZF_DEFAULT_OPTS=" \
 --color=marker:#f5e0dc,fg+:#cdd6f4,prompt:#cba6f7,hl+:#f38ba8"
 export GTK_THEME="Catppuccin-Mocha-Standard-Green-Dark"
 export GREP_COLORS=${GREP_COLORS:-"mt=38;2;24;24;37;48;2;126;201;216"}
+export LS_COLORS="$(vivid generate catppuccin-mocha)"
 
 export LESS_TERMCAP_mb=$'\e[1;32m'
 export LESS_TERMCAP_md=$'\e[1;32m'
