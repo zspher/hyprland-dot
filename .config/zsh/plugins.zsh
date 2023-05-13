@@ -35,6 +35,14 @@ zinit wait'1a' lucid for \
         atinit"
             zstyle ':prezto:*:*' color 'yes'
             zstyle ':prezto:module:utility' safe-ops 'no'" \
+        atload"
+            alias lu='ll --total-size'
+            alias lm='ll --hyperlink always'
+            alias ls='lsd --group-directories-first'
+            alias ll='ls -la --date +\"%d %b %y %H:%S\" --size short' \
+            alias lc='ll -tr'
+            alias lx='ll -X'
+            alias lt='ll --tree'"\
     "PZTM::utility" \
 
 zinit wait'1b' lucid for \

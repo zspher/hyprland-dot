@@ -124,6 +124,7 @@ pkg=(
     starship
     glow
     vivid
+    lsd
     xdg-ninja-git
     dex
     xdotool
