@@ -25,8 +25,6 @@ zinit wait'1a' lucid for \
             unalias gm
             alias gme='git merge'"\
     "zimfw/git" \
-        atinit"zstyle ':zim:input' double-dot-expand yes" \
-    "zimfw/input" \
     "OMZL::key-bindings.zsh" \
     "djui/alias-tips" \
     "OMZP::fzf" \
@@ -44,6 +42,8 @@ zinit wait'1a' lucid for \
             alias lx='ll -X'
             alias lt='ll --tree'"\
     "PZTM::utility" \
+        atinit"zstyle ':zim:input' double-dot-expand yes" \
+    "zimfw/input" \
 
 zinit wait'1b' lucid for \
         atinit"zicompinit; zicdreplay" \
