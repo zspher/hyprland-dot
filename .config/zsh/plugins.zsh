@@ -18,7 +18,7 @@ source "${ZINIT_HOME}/zinit.zsh" \
 # Prompt
 zinit lucid for "joke/zim-starship"
 
-zinit wait'0a' lucid for \
+zinit wait'1a' lucid for \
     "zimfw/environment" \
         atinit"zstyle ':zim:git' aliases-prefix 'g'"\
         atload"            
@@ -37,7 +37,7 @@ zinit wait'0a' lucid for \
             zstyle ':prezto:module:utility' safe-ops 'no'" \
     "PZTM::utility" \
 
-zinit wait'1' lucid for \
+zinit wait'1b' lucid for \
         atinit"zicompinit; zicdreplay" \
     "zdharma-continuum/fast-syntax-highlighting" \
         atload"_zsh_autosuggest_start" \
@@ -55,7 +55,6 @@ zinit wait'1' lucid for \
     "zsh-users/zsh-completions" \
         atinit"
             zstyle ':fzf-tab:*' switch-group ',' '.'
-            zstyle ':fzf-tab:complete:_zlua:*' query-string input
-            zstyle ':fzf-tab:complete:kill:argument-rest' extra-opts --preview=$extract'ps --pid=$in[(w)1] -o cmd --no-headers -w -w' --preview-window=down:3:wrap" \
+            zstyle ':fzf-tab:complete:_zlua:*' query-string input"\
         atload'zstyle ":completion:*" list-colors "${(s.:.)LS_COLORS}"' \
     "Aloxaf/fzf-tab"
