@@ -41,7 +41,7 @@ rofi_cmd() {
         -p "$prompt" \
         -mesg "$mesg" \
         -markup-rows \
-        -theme ${theme}
+        -theme "$theme"
 }
 
 # Pass variables to rofi dmenu
