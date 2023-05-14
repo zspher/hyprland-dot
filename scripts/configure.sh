@@ -13,6 +13,18 @@ copy_configs (){
     cp .zshenv ~/.zshenv
 }
 
+add_user(){
+    local files=(
+        ~/.config/btop/btop.conf
+        ~/.config/gtk-2.0/gtkrc
+        ~/.config/qBittorrent/qBittorrent.conf
+        ~/.config/qt5ct/qt5ct.conf
+    )
+    for f in "${files[@]}"; do
+        sed -i "s/\$USER/$USER/" "$f"
+    done
+}
+
 mkfile() { 
     mkdir -p -- "$1" && touch -- "$1"/"$2" 
 }
@@ -62,6 +74,7 @@ mk_xdg_dirs() {
 
 change_shell
 copy_configs
+add_user
 mk_xdg_dirs
 
 # git clone https://github.com/AstroNvim/AstroNvim ~/.config/nvim
