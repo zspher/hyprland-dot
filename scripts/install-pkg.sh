@@ -108,7 +108,6 @@ pkg=(
     swaync
     wl-clipboard
     copyq
-    wlogout
 
     # base
     xdg-desktop-portal-hyprland-git
