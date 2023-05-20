@@ -8,11 +8,7 @@ personal dotfiles for a hyprland desktop
 - endeavoros was used as the base with no DE selected
 - install packages using [install.sh](./install.sh)
 
-### QT theme
-change the contents of `/etc/environment` and add
-```
-QT_QPA_PLATFORMTHEME=qt5ct
-```
+## Misc
 
 ### External Monitor Backlight Control
 > see [backlight](https://wiki.archlinux.org/title/Backlight#External_monitors)
@@ -20,6 +16,17 @@ QT_QPA_PLATFORMTHEME=qt5ct
 1. install `ddcutil`
 2. add user to `i2c` group (*only if ddcutil <= 1.3*)
 3. add `i2c-dev` kernel module (*only if `/dev/i2c-*` are not loaded*)
+
+
+### Git Config
+1. add `username` & `email` to `git/config`
+    ```
+    [user]
+        email = <email>
+        name = <username>
+    ```
+
+## Theming
 
 ### Global Cursor Theme
 to have a unified cursor theme before and after login change 
@@ -29,11 +36,8 @@ to have a unified cursor theme before and after login change
 [Icon Theme]
 Inherits=<cursor theme>
 ```
-
-### Git Config
-1. add `username` & `email` to `git/config`
-    ```
-    [user]
-        email = <email>
-        name = <username>
-    ```
+### QT theme
+change the contents of `/etc/environment` and add
+```
+QT_QPA_PLATFORMTHEME=qt5ct
+```
