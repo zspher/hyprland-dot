@@ -62,12 +62,11 @@ run_cmd() {
         elif [[ $1 == '--reboot' ]]; then
             systemctl reboot
         elif [[ $1 == '--hibernate' ]]; then
-            systemctl hibernate
+            swaylock -f -C $HOME/.config/swaylock/config && systemctl hibernate
         elif [[ $1 == '--suspend' ]]; then
             playerctl -a pause
             amixer set Master mute
-            swaylock -f -C $HOME/.config/swaylock/config
-            systemctl suspend
+            swaylock -f -C $HOME/.config/swaylock/config && systemctl suspend
         elif [[ $1 == '--logout' ]]; then
             if [[ "$DESKTOP_SESSION" == 'openbox' ]]; then
                 openbox --exit
