@@ -8,13 +8,12 @@ program_options:
     # means auto-hide the tray icon when
     # there are no handled devices.
 
-  menu:
-    flat # ["flat" | "nested"] Set the
+  menu: nested # ["flat" | "nested"] Set the
     # systray menu behaviour.
 
   automount: true # [bool] Enable automatic mounting.
 
-  notify: false # [bool] Enable notifications.
+  notify: true # [bool] Enable notifications.
 
   password_cache:
     30 # [int] Password cache in minutes. Caching is
@@ -41,7 +40,7 @@ program_options:
     # "builtin:gui" and "builtin:tty" signify to use udiskie's
     # builtin password prompt.
 
-  notify_command: "notify-send '{event}' '{device_presentation}' -h 'string:synchronous:uds{event}' -u low -i drive-removable-media-usb -a udiskie"
+  # notify_command: "notify-send '{event}' '{device_presentation}' -h 'string:synchronous:udskie' -u low -i drive-removable-media-usb -a udiskie"
   # notify_command: "zenity --info --text '{event}: {device_presentation}'"
   # [string|list] Set command to be executed on any device event.
   # This is specified like `password_prompt`.
@@ -57,13 +56,13 @@ device_config:
 
   - is_external: True
     automount: false
-  - is_external: False
+  - is_systeminternal: true
     ignore: false
     automount: true
-  - id_uuid: 9d53-13ba # [filter] match by device UUID
-    options: [noexec, nodev] # [action] mount options can be given as list
-    ignore: false # [action] never ignore this device (even if fs=FAT)
-    automount: false # [action] do not automount this device
+  - id_uuid: 9d53-13ba          # [filter] match by device UUID
+    options: [noexec, nodev]    # [action] mount options can be given as list
+    ignore: false               # [action] never ignore this device (even if fs=FAT)
+    automount: false            # [action] do not automount this device
   # - id_type: vfat             # [filter] match file system type
   #   ignore:  true             # [action] ignore all FAT devices
 
@@ -87,9 +86,9 @@ notifications:
   timeout: 1.5 # set the default for all notifications
 
   # Specify only if you want to overwrite the default:
-  device_mounted: false # mount notification
+  device_mounted: -1 # mount notification
   device_unmounted: false # unmount notification
-  device_added: false # device has appeared
+  device_added: -1 # device has appeared
   device_removed: false # device has disappeared
   device_unlocked: -1 # encrypted device was unlocked
   device_locked: -1 # encrypted device was locked
