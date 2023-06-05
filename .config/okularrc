@@ -3,9 +3,12 @@ FullScreen=false
 
 [General]
 LockSidebar=true
-ShowSidebar=true
+ShowSidebar=false
 
 [MainWindow]
 ToolBarsMovable=Disabled
+
+[Notification Messages]
+ShowTabWarning=true
 
 [Recent Files]
