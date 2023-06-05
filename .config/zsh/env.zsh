@@ -38,6 +38,7 @@ export EDITOR="nvim"
 export VISUAL="nvim"
 export PAGER="bat -p"
 export MANPAGER="bat -p"
+export TERMINAL="kitty"
 export FZF_DEFAULT_COMMAND="find . -path '*/\.*' -type d -prune -o -type f -print -o -type l -print 2> /dev/null | sed s/^..//"
 
 # theme
