@@ -4,6 +4,7 @@
 - *.pub
 - *.lock
 - *.dat
+- *.log
 - qimgv/savedState.conf
 - bookmarks
 - swww/wallpaper
