@@ -53,7 +53,7 @@ mk_xdg_dirs() {
     mkdir -p "$XDG_CONFIG_HOME"/kde
     mkfile "$XDG_CACHE_HOME"/less "history"
     mkfile "$XDG_DATA_HOME" "node_repl_history"
-    mkfile "$XDG_CONFIG_HOME"/npm "nmpmrc"
+    mkfile "$XDG_CONFIG_HOME"/npm "npmrc"
     mkdir -p "$XDG_DATA_HOME"/platformio
     mkfile "$XDG_CONFIG_HOME"/pulse "cookie"
     mkfile "$XDG_CONFIG_HOME"/openssl "rnd"
