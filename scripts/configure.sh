@@ -39,6 +39,7 @@ mk_xdg_dirs() {
     mkfile "$XDG_DATA_HOME" "z"
     mkdir -p "$XDG_DATA_HOME"/cargo
     mkdir -p "$XDG_CACHE_HOME"/nv
+    mkdir -p "$XDG_DATA_HOME"/dvdcss
     mkfile "$XDG_CONFIG_HOME"/git "config"
     mkdir -p "$XDG_DATA_HOME"/gnupg
     # chown -R $(whoami) "$XDG_DATA_HOME"/gnupg
