@@ -40,7 +40,6 @@ pkg=(
     # davinci-resolve
     obs-studio # obs-studio-git 
     v4l2loopback-dkms
-    wf-recorder
     perl-image-exiftool
     kdeconnect
 
