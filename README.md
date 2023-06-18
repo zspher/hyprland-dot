@@ -11,6 +11,7 @@ personal dotfiles for a hyprland desktop
 ## Install
 <details>
 <summary>install instructions</summary>
+
 - endeavoros was used as the base with no DE selected
 - install packages using [install.sh](./install.sh)
 ```
