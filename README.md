@@ -1,12 +1,21 @@
 # Hyprland Dotfiles
 personal dotfiles for a hyprland desktop
 
-*yes very fun learning new WM (even tho you've only used DEs defore)*
+- **Window Manager** • [hyprland](https://github.com/hyprwm/Hyprland)
+- **Shell** • [zsh](https://www.zsh.org) w/ [starship](https://github.com/starship/starship) 
+- **Terminal** • [kitty](https://github.com/kovidgoyal/kitty)
+- **Panel** • [waybar](https://aur.archlinux.org/packages/waybar-hyprland-git)
+- **Notify Daemon** • [swaync](https://github.com/ErikReider/SwayNotificationCenter)
+- **Launcher** • [rofi](https://github.com/davatorium/rofi)
 
 ## Install
-
+<details>
+<summary>install instructions</summary>
 - endeavoros was used as the base with no DE selected
 - install packages using [install.sh](./install.sh)
+```
+./install.sh
+```
 
 ## Misc
 
@@ -41,3 +50,4 @@ change the contents of `/etc/environment` and add
 ```
 QT_QPA_PLATFORMTHEME=qt5ct
 ```
+</details>
