@@ -18,36 +18,12 @@ window#waybar.hidden {
     opacity: 0.2;
 }
 
-#workspaces {
-    background-color: shade(@base, 0.9);
+.modules-left {
+    margin-left: 10px;
+}
+
+.modules-right {
     margin-right: 10px;
-    border-radius: 0px 12.6px 12.6px 0px;
-    outline: 0px;
-}
-
-#workspaces button {
-    box-shadow: inherit;
-    text-shadow: inherit;
-    color: @text;
-}
-
-#workspaces button:hover {
-    color: @green;
-}
-
-#workspaces button:last-child {
-    padding-right: 10px;
-    border-radius: 5px 12.6px 12.6px 5px;
-}
-
-#workspaces button.active {
-    color: @green;
-    padding-bottom: 2px;
-    border-bottom: 2px solid @green;
-}
-
-#workspaces button.urgent {
-    background-color: @red;
 }
 
 #clock,
@@ -62,35 +38,135 @@ window#waybar.hidden {
 #custom-launcher,
 #custom-wallpaper,
 #custom-notification,
+#workspaces,
 #idle_inhibitor {
-    background-color: shade(@base, 0.9);
+    background-color: shade(@crust, 0.9);
     padding: 4px 4px;
     margin: 0;
 }
 
-.modules-left {
-    margin-left: 10px;
+#custom-launcher {
+    border-radius: 12.6px 0px 0px 12.6px;
+    padding: 0 15px;
+    color: @text;
 }
 
-.modules-right {
+#workspaces {
     margin-right: 10px;
+    border-radius: 0px 12.6px 12.6px 0px;
+    padding: 0;
 }
 
-#idle_inhibitor {
-    border-radius: 0px 12.6px 12.6px 0px;
+#workspaces button {
+    box-shadow: inherit;
+    text-shadow: inherit;
     padding: 0 10px;
     color: @text;
-    font-size: 11px;
+    border: solid shade(@crust, 0.9);
+    border-width: 0px 1px;
 }
 
-#idle_inhibitor.activated {
-    background-color: shade(@sapphire, 0.6);
+#workspaces button > box{
+    margin-bottom: 2px;
+}
+
+#workspaces button:hover, #workspaces button.active {
+    background-color: @base;
+    color: @mauve;
+}
+
+#workspaces button.active > box{
+    border-radius: 0;
+    border-bottom: 3px solid @mauve;
+}
+
+#workspaces button:last-child {
+    border-radius: 5px 12.6px 12.6px 5px;
+    border-right-width: 0px;
+}
+
+#workspaces button.urgent {
+    background-color: alpha(@red, 0.05);
+    border: 2px solid @red;
+    color: @red;
+    padding: 0 8px;
+}
+
+#workspaces button.urgent:hover {
+    background-color: @base;
+}
+
+#taskbar {
+    border-radius: 12.6px;
+    padding: 0;
+}
+
+#taskbar button {
+    text-shadow: inherit;
+    box-shadow: inherit;
+    padding: 0 10px;
+    min-width: 12px;
+    border: solid shade(@crust, 0.9);
+    border-width: 0px 1px;
+}
+
+#taskbar button:hover, #taskbar button.active {
+    background-color: @base;
+}
+
+#taskbar button > box{
+    margin-bottom: 2px;
+}
+
+#taskbar button.active > box{
+    border-radius: 0;
+    border-bottom: 3px solid @mauve;
+}
+
+#taskbar button:last-child, #taskbar button:last-child:hover {
+    border-radius: 5px 12.6px 12.6px 5px;
+    padding-right: 10px;
+    border-right-width: 0px;
+}
+
+#taskbar button:first-child, #taskbar button:first-child:hover {
+    border-radius: 12.6px 5px 5px 12.6px;
+    padding-left: 10px;
+    border-left-width: 0px;
+}
+
+#taskbar button:only-child, #taskbar button:only-child:hover {
+    border-radius: 12.6px;
+    padding: 0 10px;
+    border-width: 0px;
 }
 
 #clock {
     border-radius: 12.6px 0 0 12.6px;
-    padding-left: 10px;
-    color: @sapphire;
+    padding: 0 0 0 10px;
+    color: @blue;
+}
+
+#idle_inhibitor {
+    border-radius: 0px 12.6px 12.6px 0px;
+    padding: 0 10px 0 5px;
+    color: @mauve;
+    font-size: 11px;
+}
+
+#idle_inhibitor.activated {
+    background-color: @blue;
+    color: shade(@crust, 0.9);
+}
+
+#custom-wallpaper {
+    background-image: linear-gradient(30deg, @red, @peach, @yellow, @green, @blue, @lavender, @mauve);
+    background-image: linear-gradient(30deg, @blue 40%, @mauve 60%, @red 100%);
+    border-radius: 50%;
+    margin-right: 10px;
+    padding: 4px 10px 0;
+    color: shade(@mantle, 0.9);
+    border: 1px solid @base;
 }
 
 #pulseaudio {
@@ -99,9 +175,9 @@ window#waybar.hidden {
     color: @maroon;
 }
 
-#pulseaudio.muted {
+/* #pulseaudio.muted {
     background-color: @base;
-}
+} */
 
 /* #cpu {
 } */
@@ -124,6 +200,12 @@ window#waybar.hidden {
     background-color: @red;
 }
 
+#custom-notification {
+    font-size: 10px;
+    border-radius: 12.6px 0 0 12.6px;
+    padding: 0 10px 0 15px;
+}
+
 #tray {
     border-radius: 0 12.6px 12.6px 0;
     padding: 0 10px 0 0;
@@ -140,66 +222,16 @@ window#waybar.hidden {
 
 #tray>.needs-attention>image {
     padding: 2px 5px;
-    background-color: shade(@red, 0.9);
     border-radius: 12.6px;
-}
-
-#custom-launcher {
-    border-radius: 12.6px 0px 0px 12.6px;
-    padding: 0 15px;
-    color: @green;
-}
-
-#taskbar {
-    border-radius: 12.6px;
-    padding: 0;
-}
-
-#taskbar button {
-    text-shadow: inherit;
-    box-shadow: inherit;
-    padding: 0 10px;
-    min-width: 12px;
-}
-
-#taskbar button:hover {
-    background-color: @mauve;
-}
-
-#taskbar button:last-child, #taskbar button:last-child:hover {
-    border-radius: 5px 12.6px 12.6px 5px;
-    padding-right: 10px;
-}
-
-#taskbar button:first-child, #taskbar button:first-child:hover {
-    border-radius: 12.6px 5px 5px 12.6px;
-    padding-left: 10px;
-}
-
-#taskbar button:only-child, #taskbar button:only-child:hover {
-    border-radius: 12.6px;
-    padding: 0 10px;
+    background-color: alpha(@red, 0.05);
+    border: 2px solid @red;
 }
 
 tooltip {
-    background: @surface1;
-    border: 1px @surface1 solid;
+    border-width: 0;
+    background: @mantle;
 }
 
 tooltip label {
     color: @text;
-}
-
-#custom-wallpaper {
-    background-image: radial-gradient(shade(@base, 0.9) 30%, @mauve 40%);
-    border-radius: 12.6px;
-    margin-right: 10px;
-    padding: 4px 10px 0;
-    color: @text;
-}
-
-#custom-notification {
-    font-size: 10px;
-    border-radius: 12.6px 0 0 12.6px;
-    padding: 0 10px 0 15px;
 }

@@ -1,4 +1,3 @@
-#!/usr/bin/env bash
 
 random_array_element() {
     # Usage: random_array_element "array"
@@ -39,5 +38,4 @@ if [[ "$1" = -w ]]; then
     wallpaper_get
 elif [[ -z "$1" ]]; then
     wallpaper_set
-    printf "%s" "🖼"
 fi
