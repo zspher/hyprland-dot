@@ -101,6 +101,10 @@ window#waybar.hidden {
     padding: 0;
 }
 
+#taskbar.empty {
+    background: transparent;
+}
+
 #taskbar button {
     text-shadow: inherit;
     box-shadow: inherit;
