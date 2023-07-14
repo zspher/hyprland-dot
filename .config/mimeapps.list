@@ -1,4 +1,5 @@
 [Added Associations]
+application/json=code.desktop;
 application/pdf=org.kde.okular.desktop;
 application/x-visual-studio-code-workspace=code.desktop;
 application/x-wine-extension-ini=code.desktop;
@@ -9,8 +10,8 @@ image/jpeg=qimgv.desktop;brave-browser.desktop;gimp.desktop;okularApplication_ki
 image/png=qimgv.desktop;
 image/svg+xml=qimgv.desktop;
 image/tiff=qimgv.desktop;
-image/vnd.djvu+multipage=org.kde.okular.desktop;
 image/vnd.djvu=org.kde.okular.desktop;
+image/vnd.djvu+multipage=org.kde.okular.desktop;
 image/vnd.microsoft.icon=qimgv.desktop;
 image/webp=qimgv.desktop;
 inode/directory=org.kde.dolphin.desktop;
@@ -26,6 +27,7 @@ x-scheme-handler/mailto=thunderbird.desktop;
 x-scheme-handler/tel=org.kde.kdeconnect.handler.desktop;
 
 [Default Applications]
+application/json=code.desktop;
 application/pdf=org.kde.okular.desktop;
 application/x-visual-studio-code-workspace=code.desktop;
 application/x-wine-extension-ini=code.desktop;
@@ -36,8 +38,8 @@ image/jpeg=qimgv.desktop;
 image/png=qimgv.desktop;
 image/svg+xml=qimgv.desktop;
 image/tiff=qimgv.desktop;
-image/vnd.djvu+multipage=org.kde.okular.desktop;
 image/vnd.djvu=org.kde.okular.desktop;
+image/vnd.djvu+multipage=org.kde.okular.desktop;
 image/vnd.microsoft.icon=qimgv.desktop;
 image/webp=qimgv.desktop;
 inode/directory=org.kde.dolphin.desktop;
