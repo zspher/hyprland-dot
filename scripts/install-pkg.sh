@@ -74,6 +74,7 @@ pkg=(
     font-manager
     blueman
     clight
+    cpu-x
 
     # documents
     neovim
