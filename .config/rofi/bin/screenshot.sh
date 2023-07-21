@@ -58,11 +58,6 @@ if [[ ! -d "$dir" ]]; then
     mkdir -p "$dir"
 fi
 
-# Copy screenshot to clipboard
-copy_shot () {
-    tee "$file" | xclip -selection clipboard -t image/png
-}
-
 # countdown
 countdown () {
     local ID=0
@@ -74,29 +69,29 @@ countdown () {
 
 # take shots
 shotnow () {
-    sleep 0.5 && grimblast --notify copysave screen "$dir/$file"
+    sleep 0.5 && grimblast -f --notify copysave screen "$dir/$file"
     qimgv "$dir/$file"
 }
 
 shot5 () {
     countdown '5'
-    sleep 1 && grimblast --notify copysave screen "$dir/$file"
+    sleep 1 && grimblast -f --notify copysave screen "$dir/$file"
     qimgv "$dir/$file"
 }
 
 shot10 () {
     countdown '10'
-    sleep 1 && grimblast --notify copysave screen "$dir/$file"
+    sleep 1 && grimblast -f --notify copysave screen "$dir/$file"
     qimgv "$dir/$file"
 }
 
 shotwin () {
-    sleep 1 && grimblast --notify copysave active "$dir/$file"
+    sleep 1 && grimblast -f --notify copysave active "$dir/$file"
     qimgv "$dir/$file"
 }
 
 shotarea () {
-    sleep 1 && grimblast --notify copysave area "$dir/$file"
+    sleep 1 && grimblast -f --notify copysave area "$dir/$file"
     qimgv "$dir/$file"
 }
 
