@@ -7,7 +7,6 @@
 - *.log
 - qimgv/savedState.conf
 - bookmarks
-- swww/wallpaper
 
 # include
 + .config/
@@ -33,7 +32,6 @@
 + rofi/***
 + swaylock/***
 + swaync/***
-+ swww/***
 + udiskie/***
 + waybar/***
 + zsh/***

@@ -17,7 +17,6 @@
         "idle_inhibitor"
     ],
     "modules-right": [
-        "custom/wallpaper",
         "pulseaudio",
         "cpu",
         "memory",
@@ -163,12 +162,5 @@
         "icon-size": 12,
         "spacing": 10,
         "show-passive-items": true
-    },
-    "custom/wallpaper": {
-        "interval": 1800,
-        "on-click": "~/.config/swww/wallpaper.sh",
-        "exec": "echo '{\"text\": \"🖼\", \"tooltip\": \"change wallpaper\"}' && ~/.config/swww/wallpaper.sh",
-        "exec-on-event": true,
-        "return-type": "json"
     }
 }

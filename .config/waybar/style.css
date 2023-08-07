@@ -36,7 +36,6 @@ window#waybar.hidden {
 #tray,
 #taskbar,
 #custom-launcher,
-#custom-wallpaper,
 #custom-notification,
 #workspaces,
 #idle_inhibitor {
@@ -161,16 +160,6 @@ window#waybar.hidden {
 #idle_inhibitor.activated {
     background-color: @blue;
     color: shade(@crust, 0.9);
-}
-
-#custom-wallpaper {
-    background-image: linear-gradient(30deg, @red, @peach, @yellow, @green, @blue, @lavender, @mauve);
-    background-image: linear-gradient(30deg, @blue 40%, @mauve 60%, @red 100%);
-    border-radius: 50%;
-    margin-right: 10px;
-    padding: 4px 10px 0;
-    color: shade(@mantle, 0.9);
-    border: 1px solid @base;
 }
 
 #pulseaudio {
