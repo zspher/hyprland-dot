@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 layout=$(hyprctl getoptions general:layout -j | jq '.str' -r)
 if [[ $layout = "master" ]]; then

@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 rsync -azvhP ~/ .. --filter="merge ./copy.filter"
 

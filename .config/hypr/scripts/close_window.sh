@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 window_title=$(hyprctl activewindow -j | jq -r ".class")
 
