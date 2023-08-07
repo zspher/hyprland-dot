@@ -33,4 +33,4 @@ grace-no-touch
 datestr=%b %d, %Y
 fade-in=0.1
 ignore-empty-password
-image=$($HOME/.config/swww/wallpaper.sh -w)
+image=$($HOME/.config/swaylock/wallpaper.sh)
