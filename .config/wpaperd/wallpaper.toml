@@ -1,0 +1,4 @@
+[default]
+path = "~/Pictures/wallpapers/"
+duration = "15m"
+sorting = "ascending"

@@ -104,6 +104,7 @@ pkg=(
     eww
     waybar-hyprland # waybar-hyprland-git
     rofi-lbonn-wayland
+    wpaperd
     swaync
     wl-clipboard
     copyq
