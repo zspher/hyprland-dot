@@ -24,9 +24,9 @@ configuration {
     element-padding:             35px 40px;
     element-border-radius:       20px;
 
-    prompt-font:                 "CaskaydiaCove Nerd Font Bold 72";
-    textbox-font:                "CaskaydiaCove Nerd Font 14";
-    element-text-font:           "CaskaydiaCove Nerd Font 64";
+    prompt-font:                 "CaskaydiaCove Nerd Font Mono Bold 72";
+    textbox-font:                "CaskaydiaCove Nerd Font Mono 14";
+    element-text-font:           "CaskaydiaCove Nerd Font Mono 70";
 
     background-window:           black/30%;
     background-normal:           white/5%;

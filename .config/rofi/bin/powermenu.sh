@@ -18,12 +18,12 @@ uptime=$(uptime -p | sed -e 's/up //g')
 host=$(hostname)
 
 # Options
-shutdown=''
-reboot=''
-lock=''
-suspend=''
-logout=''
-hibernate=''
+shutdown=''
+reboot='󰜉'
+lock=''
+suspend='⏾'
+logout='󰍃'
+hibernate=''
 yes=''
 no=''
 
