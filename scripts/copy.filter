@@ -11,7 +11,7 @@
 # include
 + .config/
 + anyrun/***
-+ bat/
++ bat/***
 + btop/***
 + cava/***
 + copyq/copyq.conf
