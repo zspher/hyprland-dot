@@ -10,6 +10,7 @@
 
 # include
 + .config/
++ anyrun/***
 + bat/
 + btop/***
 + cava/***
