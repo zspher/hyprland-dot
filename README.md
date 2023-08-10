@@ -20,6 +20,14 @@ personal dotfiles for a hyprland desktop
 
 ## Misc
 
+### anyrun hyprland window switcher
+> see [anyrun-hyprland](https://github.com/auctumnus/anyrun-hyprland)
+
+1. `git clone https://github.com/auctumnus/anyrun-hyprland`
+2. `cd anyrun-hyprland`
+3. `cargo build --release`
+4. `cp target/release/libanyrun_hyprland.so ~/.config/anyrun/plugins`
+
 ### External Monitor Backlight Control
 > see [backlight](https://wiki.archlinux.org/title/Backlight#External_monitors)
 
