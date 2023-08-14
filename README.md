@@ -59,4 +59,12 @@ change the contents of `/etc/environment` and add
 ```
 QT_QPA_PLATFORMTHEME=qt5ct
 ```
+
+### SDDM theme
+change contents of `/etc/sddm.conf` to
+```ini
+[Theme]
+Current=corners
+```
+
 </details>

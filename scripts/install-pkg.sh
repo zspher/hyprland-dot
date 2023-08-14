@@ -143,6 +143,7 @@ pkg=(
     papirus-folders
     lightly-git
     gtk3-classic
+    sddm-theme-corners-git
 
     # gamimg
     gamescope-git
