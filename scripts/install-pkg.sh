@@ -100,9 +100,9 @@ pkg=(
     wakatime
     anki
     sddm-git
-    hyprland-nvidia # or hyprland, hyprland-git
+    hyprland-nvidia-git # or hyprland, hyprland-git
     eww
-    waybar-hyprland # waybar-hyprland-git
+    waybar-hyprland-git # waybar-hyprland-git
     rofi-lbonn-wayland
     anyrun-git
     wpaperd
@@ -111,6 +111,7 @@ pkg=(
     copyq
 
     # base
+    xdg-desktop-portal-gtk
     xdg-desktop-portal-hyprland-git
     qt5-wayland
     qt6-wayland
@@ -128,6 +129,7 @@ pkg=(
     xdg-ninja-git
     dex
     xdotool
+    flatpak
 
     # theming
     nwg-look-bin
@@ -140,18 +142,27 @@ pkg=(
     catppuccin-gtk-theme-mocha
     papirus-folders
     lightly-git
-    # gtk3-classic
+    gtk3-classic
 
     # gamimg
-    # gamescope-git
-    # lutris-git
-    # steam
+    gamescope-git
+    lutris-git
+    steam
 )
 
 
 for p in "${pkg[@]}"; do
     yay -S --noconfirm --needed "$p"
     echo "INSTALLING: " "$p"
+done
+
+flatpaks=(
+    com.obsproject.Studio
+    com.github.tchx84.Flatseal
+)
+
+for p in "${flatpaks[@]}"; do
+    flatpak install "$p" -y
 done
 
 # post install
