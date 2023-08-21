@@ -1,9 +1,13 @@
 #!/usr/bin/env bash
 
-# install
+flatpak=(
+    com.obsproject.Studio
+    com.github.tchx84.Flatseal
+    org.gimp.GIMP
+)
+
 pkg=(
     # internet
-    networkmanager
     nm-connection-editor
     network-manager-applet
     brave-bin
@@ -22,8 +26,6 @@ pkg=(
     timg
     qimgv-git
     graphicsmagick
-    gifsicle
-    gimp
     krita
     inkscape
     hyprpicker-git
@@ -38,7 +40,6 @@ pkg=(
     ffmpeg
     handbrake
     # davinci-resolve
-    obs-studio # obs-studio-git 
     v4l2loopback-dkms
     perl-image-exiftool
     kdeconnect
@@ -57,10 +58,6 @@ pkg=(
     kde-cli-tools
     ranger
     ffmpegthumbnailer
-    resvg
-    kde-cli-tools
-    ranger
-    ffmpegthumbnailer
     ark
     rsync
     timeshift
@@ -69,12 +66,41 @@ pkg=(
     gparted
     udiskie
     popsicle
-    btop
-    hardinfo-git
     font-manager
     blueman
-    clight
-    cpu-x
+    clightd
+    wlr-randr
+    nwg-display
+    filelight
+    # syncthing
+    # virtualbox-host-dkms
+    # virtualbox
+    # vagrant
+
+    # utilities: diagnostics & monitoring
+    btop
+    hardinfo-git
+    s-tui
+    nvtop
+    wev
+
+    # extra utils
+    bat
+    playerctl
+    pavucontrol
+    noise-suppression-for-voice
+    fastfetch
+    starship
+    glow
+    vivid
+    lsd
+    xdg-ninja-git
+    dex
+    xdotool
+    flatpak
+    wl-clipboard
+    xclip
+    copyq
 
     # documents
     neovim
@@ -94,79 +120,47 @@ pkg=(
     swaylock-effects
     clamtk
     seahorse
+    gnome-keyring
 
     # other
     gnome-clocks
     wakatime
     anki
-    sddm-git
-    hyprland-nvidia-git # or hyprland, hyprland-git
     eww
     waybar-hyprland-git # waybar-hyprland-git
     rofi-lbonn-wayland
     anyrun-git
     wpaperd
     swaync
-    wl-clipboard
-    copyq
+    swayidle
 
     # base
     xdg-desktop-portal-gtk
     xdg-desktop-portal-hyprland-git
     qt5-wayland
     qt6-wayland
-
-    # extra utils
-    playerctl
-    pavucontrol
-    noise-suppression-for-voice
-    fastfetch
-    bat
-    starship
-    glow
-    vivid
-    lsd
-    xdg-ninja-git
-    dex
-    xdotool
-    flatpak
-
-    # theming
-    nwg-look-bin
-    qt5ct-kde
-    ttf-noto-nerd
-    papirus-icon-theme
-    noto-fonts-emoji
-    ttf-cascadia-code-nerd
-    posy-improved-cursors
-    catppuccin-gtk-theme-mocha
-    papirus-folders
-    lightly-git
-    gtk3-classic
-    sddm-theme-corners-git
+    sddm-git
+    hyprland-nvidia-git # or hyprland, hyprland-git
 
     # gamimg
     gamescope-git
     lutris-git
     steam
+
+    #fonts
+    ttf-noto-nerd
+    noto-fonts-emoji
+    ttf-cascadia-code-nerd
+    ttf-nerd-fonts-symbols
+
+    # theming
+    nwg-look-bin
+    qt5ct-kde
+    papirus-icon-theme
+    papirus-folders
+    posy-improved-cursors
+    catppuccin-gtk-theme-mocha
+    lightly-git
+    sddm-theme-corners-git
+    gtk3-classic
 )
-
-
-for p in "${pkg[@]}"; do
-    yay -S --noconfirm --needed "$p"
-    echo "INSTALLING: " "$p"
-done
-
-flatpaks=(
-    com.obsproject.Studio
-    com.github.tchx84.Flatseal
-)
-
-for p in "${flatpaks[@]}"; do
-    flatpak install "$p" -y
-done
-
-# post install
-bat cache --build
-sudo systemctl enable --now NetworkManager.service
-yay -Y --editmenu --nodiffmenu --save

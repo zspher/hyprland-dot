@@ -42,9 +42,8 @@ mk_xdg_dirs() {
     mkdir -p "$XDG_DATA_HOME"/dvdcss
     mkfile "$XDG_CONFIG_HOME"/git "config"
     mkdir -p "$XDG_DATA_HOME"/gnupg
-    # chown -R $(whoami) "$XDG_DATA_HOME"/gnupg
-    # chmod 600 "$XDG_DATA_HOME"/gnupg/*
-    # chmod 700 "$XDG_DATA_HOME"/gnupg
+    chown -R $(whoami):$(whoami) "$XDG_DATA_HOME"/gnupg
+    chmod 700 "$XDG_DATA_HOME"/gnupg
     mkdir -p "$XDG_DATA_HOME"/go
     mkdir -p "$XDG_DATA_HOME"/gradle
     mkfile "$XDG_CONFIG_HOME"/gtk-2.0 "gtkrc"
@@ -78,5 +77,3 @@ copy_configs
 add_user
 mk_xdg_dirs
 
-# git clone https://github.com/AstroNvim/AstroNvim ~/.config/nvim
-# git clone https://github.com/portus-zephyr/astrovim_conf ~/.config/nvim/lua/user
