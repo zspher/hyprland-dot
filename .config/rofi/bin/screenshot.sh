@@ -67,32 +67,31 @@ countdown () {
     done
 }
 
+notify (){
+    notify-send -i "$dir/$file" "Screenshot Saved" "$dir/$file"
+}
+
 # take shots
 shotnow () {
-    sleep 0.5 && grimblast -f --notify copysave screen "$dir/$file"
-    qimgv "$dir/$file"
+    sleep 0.5 && grimblast -f copysave screen "$dir/$file"
 }
 
 shot5 () {
     countdown '5'
-    sleep 1 && grimblast -f --notify copysave screen "$dir/$file"
-    qimgv "$dir/$file"
+    sleep 1 && grimblast -f copysave screen "$dir/$file"
 }
 
 shot10 () {
     countdown '10'
-    sleep 1 && grimblast -f --notify copysave screen "$dir/$file"
-    qimgv "$dir/$file"
+    sleep 1 && grimblast -f copysave screen "$dir/$file"
 }
 
 shotwin () {
-    sleep 1 && grimblast -f --notify copysave active "$dir/$file"
-    qimgv "$dir/$file"
+    sleep 1 && grimblast -f copysave active "$dir/$file"
 }
 
 shotarea () {
-    sleep 1 && grimblast -f --notify copysave area "$dir/$file"
-    qimgv "$dir/$file"
+    sleep 1 && grimblast -f copysave area "$dir/$file"
 }
 
 # Execute Command
@@ -108,6 +107,8 @@ run_cmd() {
     elif [[ "$1" == '--opt5' ]]; then
         shot10
     fi
+    notify
+    qimgv "$dir/$file"
 }
 
 # Actions
