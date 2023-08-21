@@ -20,14 +20,6 @@ personal dotfiles for a hyprland desktop
 
 ## Misc
 
-### anyrun hyprland window switcher
-> see [anyrun-hyprland](https://github.com/auctumnus/anyrun-hyprland)
-
-1. `git clone https://github.com/auctumnus/anyrun-hyprland`
-2. `cd anyrun-hyprland`
-3. `cargo build --release`
-4. `cp target/release/libanyrun_hyprland.so ~/.config/anyrun/plugins`
-
 ### External Monitor Backlight Control
 > see [backlight](https://wiki.archlinux.org/title/Backlight#External_monitors)
 
@@ -44,27 +36,18 @@ personal dotfiles for a hyprland desktop
         name = <username>
     ```
 
-## Theming
+## some issues & their solutions
+### can't detect `.local` domain resolution (*avahi*)
 
-### Global Cursor Theme
-to have a unified cursor theme before and after login change 
+1. `systemctl enable --now avahi-daemon.service`
+2. change contents of `/etc/nsswitch.conf` *use sudoedit*
 
-`/usr/share/icons/default`
-```ini
-[Icon Theme]
-Inherits=<cursor theme>
 ```
-### QT theme
-change the contents of `/etc/environment` and add
+hosts: mymachines mdns_minimal [NOTFOUND=return] resolve [!UNAVAIL=return] files myhostname dns
 ```
-QT_QPA_PLATFORMTHEME=qt5ct
-```
+3. (firewalld) `firewall-cmd --permanent --add-port=5353/udp`
 
-### SDDM theme
-change contents of `/etc/sddm.conf` to
-```ini
-[Theme]
-Current=corners
-```
+### VM stuck in boot
+1. *possible solution* set kernel parameter `ibt=off`
 
 </details>
