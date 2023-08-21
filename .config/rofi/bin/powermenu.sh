@@ -24,8 +24,8 @@ lock=''
 suspend='⏾'
 logout='󰍃'
 hibernate=''
-yes=''
-no=''
+yes=''
+no=''
 
 # Rofi CMD
 rofi_cmd() {
