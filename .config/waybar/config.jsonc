@@ -5,7 +5,6 @@
     // "width": 1280, // Waybar width
     // "spacing": 4, // Gaps between modules (4px)
     "margin-top": 10,
-    "mod": "dock",
     // Choose the order of the modules
     "modules-left": [
         "custom/launcher",
@@ -39,16 +38,16 @@
         "format": "<b>{icon}</b>",
         "on-click": "activate",
         "format-icons": {
-        "1": "⼀",
-        "2": "二",
-        "3": "三",
-        "4": "四",
-        "5": "五",
-        "6": "六",
-        "7": "七",
-        "8": "八",
-        "9": "九",
-        "10": "十"
+            "1": "⼀",
+            "2": "二",
+            "3": "三",
+            "4": "四",
+            "5": "五",
+            "6": "六",
+            "7": "七",
+            "8": "八",
+            "9": "九",
+            "10": "十"
         },
         "sort-by-number": true
     },
