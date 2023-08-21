@@ -37,25 +37,18 @@ alias wget='wget --hsts-file="$XDG_DATA_HOME/wget-hsts"'
 # extra
 export EDITOR="nvim"
 export VISUAL="nvim"
-export PAGER="bat -p"
-export MANPAGER="bat -p"
+export PAGER="less"
+export MANPAGER="less"
+export MANROFFOPT="-c"
+export LESS='-R --use-color -Dd+r$Du+b$'
 export TERMINAL="kitty"
 export FZF_DEFAULT_COMMAND="find . -path '*/\.*' -type d -prune -o -type f -print -o -type l -print 2> /dev/null | sed s/^..//"
 
 # theme
-export BAT_THEME="Catppuccin-mocha"
+export GTK_THEME="Catppuccin-Mocha-Standard-Mauve-dark"
 export FZF_DEFAULT_OPTS=" \
 --color=bg+:#313244,bg:#1e1e2e,spinner:#f5e0dc,hl:#f38ba8 \
 --color=fg:#cdd6f4,header:#f38ba8,info:#cba6f7,pointer:#f5e0dc \
 --color=marker:#f5e0dc,fg+:#cdd6f4,prompt:#cba6f7,hl+:#f38ba8"
-export GTK_THEME="Catppuccin-Mocha-Standard-Mauve-dark"
-export GREP_COLORS=${GREP_COLORS:-"mt=38;2;24;24;37;48;2;126;201;216"}
+export GREP_COLORS=${GREP_COLORS:-"mt=01;41;30"}
 export LS_COLORS="$(vivid generate catppuccin-mocha)"
-
-export LESS_TERMCAP_mb=$'\e[1;32m'
-export LESS_TERMCAP_md=$'\e[1;32m'
-export LESS_TERMCAP_me=$'\e[0m'
-export LESS_TERMCAP_se=$'\e[0m'
-export LESS_TERMCAP_so=$'\e[38;2;24;24;37;48;2;126;201;216m'
-export LESS_TERMCAP_ue=$'\e[0m'
-export LESS_TERMCAP_us=$'\e[1;4;31m'
