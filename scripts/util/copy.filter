@@ -37,6 +37,7 @@
 + udiskie/***
 + waybar/***
 + wpaperd/***
++ xsettingsd/***
 + zsh/***
 
 + electron-flags.conf
