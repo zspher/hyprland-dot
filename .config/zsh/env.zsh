@@ -45,10 +45,10 @@ export TERMINAL="kitty"
 export FZF_DEFAULT_COMMAND="find . -path '*/\.*' -type d -prune -o -type f -print -o -type l -print 2> /dev/null | sed s/^..//"
 
 # theme
-export GTK_THEME="Catppuccin-Mocha-Standard-Mauve-dark"
 export FZF_DEFAULT_OPTS=" \
 --color=bg+:#313244,bg:#1e1e2e,spinner:#f5e0dc,hl:#f38ba8 \
 --color=fg:#cdd6f4,header:#f38ba8,info:#cba6f7,pointer:#f5e0dc \
 --color=marker:#f5e0dc,fg+:#cdd6f4,prompt:#cba6f7,hl+:#f38ba8"
+export GTK_THEME="Catppuccin-Mocha-Standard-Mauve-dark"
 export GREP_COLORS=${GREP_COLORS:-"mt=01;41;30"}
 export LS_COLORS="$(vivid generate catppuccin-mocha)"
