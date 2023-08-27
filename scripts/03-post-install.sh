@@ -33,3 +33,8 @@ mv ~/.local/state/nvim ~/.local/state/nvim.bak
 mv ~/.cache/nvim ~/.cache/nvim.bak
 git clone https://github.com/AstroNvim/AstroNvim ~/.config/nvim
 git clone https://github.com/portus-zephyr/astrovim_conf ~/.config/nvim/lua/user
+
+# vscode flags
+if [ $(sed "/\/\.*/d" ~/.vscode/argv.json | jq '."password-store"') == "null" ]; then
+    sed -i "s/{/{\n\t\"password-store\": \"gnome\",/" ~/.vscode/argv.json
+fi
