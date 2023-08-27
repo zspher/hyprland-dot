@@ -125,3 +125,5 @@ icon_names:
   detach: [udiskie-detach]
   delete: [udiskie-eject]
   quit: [application-exit]
+  checked: [udiskie-checkbox-checked]
+  unchecked: [udiskie-checkbox-unchecked]
