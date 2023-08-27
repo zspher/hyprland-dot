@@ -62,11 +62,9 @@ run_cmd() {
         elif [[ $1 == '--reboot' ]]; then
             systemctl reboot
         elif [[ $1 == '--hibernate' ]]; then
-            swaylock -f -C $HOME/.config/swaylock/config && systemctl hibernate
+            systemctl hibernate
         elif [[ $1 == '--suspend' ]]; then
-            playerctl -a pause
-            amixer set Master mute
-            swaylock -f -C $HOME/.config/swaylock/config && systemctl suspend
+            systemctl suspend
         elif [[ $1 == '--logout' ]]; then
             if [[ "$DESKTOP_SESSION" == 'openbox' ]]; then
                 openbox --exit
@@ -100,7 +98,7 @@ case ${chosen} in
         elif [[ -x '/usr/bin/i3lock' ]]; then
             i3lock
         elif [[ -x '/usr/bin/swaylock' ]]; then
-            swaylock
+            swaylock -f -C $HOME/.config/swaylock/config
         fi
         ;;
     "$suspend")
