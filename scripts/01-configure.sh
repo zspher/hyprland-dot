@@ -10,7 +10,6 @@ change_shell(){
 copy_configs (){
     cp .config/* ~/.config -r
     cp .local/* ~/.local/ -r
-    cp .zshenv ~/.zshenv
 }
 
 add_user(){
