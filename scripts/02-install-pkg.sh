@@ -1,9 +1,10 @@
 #!/usr/bin/env bash
 
-source util/pkg.sh
+[ -z $SCRIPTS_DIR ] && SCRIPTS_DIR="."
+source $SCRIPTS_DIR/util/pkg.sh
 
 for p in "${pkg[@]}"; do
-    yay -S --noconfirm --needed "$p"
+    yay -S --noconfirm --needed "$p" --sudoloop
     echo "INSTALLING: " "$p"
 done
 

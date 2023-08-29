@@ -19,7 +19,7 @@ pkg=(
     openssh
     qbittorrent
     betterbird-bin
-    webcord-bin
+    webcord
     weechat
 
     # multimedia
@@ -111,7 +111,6 @@ pkg=(
     tesseract
     calibre
     skanpage
-    joplin-desktop
     obsidian
 
     # security
@@ -139,7 +138,7 @@ pkg=(
     xdg-desktop-portal-hyprland-git
     qt5-wayland
     qt6-wayland
-    sddm-git
+    sddm
     hyprland-nvidia-git # or hyprland, hyprland-git
 
     # gamimg
