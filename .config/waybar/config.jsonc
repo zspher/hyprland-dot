@@ -8,7 +8,7 @@
     // Choose the order of the modules
     "modules-left": [
         "custom/launcher",
-        "wlr/workspaces",
+        "hyprland/workspaces",
         "wlr/taskbar"
     ],
     "modules-center": [
@@ -34,7 +34,7 @@
         "on-click-right": "killall rofi",
         "interval": 5
     },
-    "wlr/workspaces": {
+    "hyprland/workspaces": {
         "format": "<b>{icon}</b>",
         "on-click": "activate",
         "format-icons": {
