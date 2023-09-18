@@ -42,7 +42,6 @@ export MANPAGER="less"
 export MANROFFOPT="-c"
 export LESS='-R --use-color -Dd+r$Du+b$'
 export TERMINAL="kitty"
-export FZF_DEFAULT_COMMAND="find . -path '*/\.*' -type d -prune -o -type f -print -o -type l -print 2> /dev/null | sed s/^..//"
 
 # theme
 export FZF_DEFAULT_OPTS=" \
