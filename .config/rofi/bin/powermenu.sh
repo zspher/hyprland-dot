@@ -98,7 +98,7 @@ case ${chosen} in
         elif [[ -x '/usr/bin/i3lock' ]]; then
             i3lock
         elif [[ -x '/usr/bin/swaylock' ]]; then
-            swaylock -f -C $HOME/.config/swaylock/config
+            swaylock -f -C "$HOME"/.config/swaylock/config
         fi
         ;;
     "$suspend")
@@ -111,4 +111,3 @@ case ${chosen} in
         run_cmd --hibernate
         ;;
 esac
-
