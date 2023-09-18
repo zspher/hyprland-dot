@@ -1,8 +1,8 @@
 [Added Associations]
-application/json=code.desktop;
+application/json=nvim.desktop;
 application/pdf=org.kde.okular.desktop;
 application/x-visual-studio-code-workspace=code.desktop;
-application/x-wine-extension-ini=code.desktop;
+application/x-wine-extension-ini=nvim.desktop;
 image/avif=qimgv.desktop;
 image/gif=qimgv.desktop;
 image/heif=qimgv.desktop;
@@ -17,8 +17,7 @@ image/vnd.microsoft.icon=qimgv.desktop;
 image/webp=qimgv.desktop;
 inode/directory=org.kde.dolphin.desktop;
 text/html=brave-browser.desktop;calibre-ebook-edit.desktop;firefox.desktop;org.kde.kate.desktop;org.kde.kwrite.desktop;libreoffice-writer.desktop;okularApplication_txt.desktop;nvim.desktop;code.desktop;
-text/markdown=code.desktop;okularApplication_md.desktop;libreoffice-writer.desktop;okularApplication_txt.desktop;nvim.desktop;
-text/plain=code.desktop;libreoffice-writer.desktop;okularApplication_txt.desktop;nvim.desktop;
+text/markdown=nvim.desktop;code.desktop;okularApplication_md.desktop;libreoffice-writer.desktop;okularApplication_txt.desktop;
 video/mp4=mpv.desktop;
 video/x-matroska=mpv.desktop;
 video/x-msvideo=mpv.desktop;
@@ -29,11 +28,11 @@ x-scheme-handler/mailto=thunderbird.desktop;
 x-scheme-handler/tel=org.kde.kdeconnect.handler.desktop;
 
 [Default Applications]
-application/json=code.desktop;
+application/json=nvim.desktop;
 application/lrf=calibre-lrfviewer.desktop
 application/pdf=org.kde.okular.desktop;
 application/x-visual-studio-code-workspace=code.desktop;
-application/x-wine-extension-ini=code.desktop;
+application/x-wine-extension-ini=nvim.desktop;
 image/avif=qimgv.desktop;
 image/gif=qimgv.desktop;
 image/heif=qimgv.desktop;
@@ -48,8 +47,8 @@ image/vnd.microsoft.icon=qimgv.desktop;
 image/webp=qimgv.desktop;
 inode/directory=org.kde.dolphin.desktop;
 text/html=brave-browser.desktop;
-text/markdown=code.desktop;
-text/plain=code.desktop;
+text/markdown=nvim.desktop;
+text/plain=nvim.desktop;
 video/mp4=mpv.desktop;
 video/x-matroska=mpv.desktop;
 video/x-msvideo=mpv.desktop;
