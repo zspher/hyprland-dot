@@ -70,11 +70,10 @@ mk_xdg_dirs() {
     mkfile "$XDG_DATA_HOME" "wget-hsts"
     mkfile "$XDG_CONFIG_HOME"/nvidia "settings"
 
-    echo export ZDOTDIR=\"\$HOME\"/.config/zsh | sudo tee /etc/zsh/zshenv 
+    [[ -e /etc/zsh/zshenv ]] && echo export ZDOTDIR=\"\$HOME\"/.config/zsh | sudo tee /etc/zsh/zshenv
 }
 
 change_shell
 copy_configs
 add_user
 mk_xdg_dirs
-
