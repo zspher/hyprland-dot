@@ -1,18 +1,18 @@
 #!/usr/bin/env bash
 
-change_shell(){
+change_shell() {
     if ! [ "$SHELL" = "$(which zsh)" ]; then
         echo "CHANGING SHELL"
         sudo chsh -s "$(which zsh)" "$USER"
     fi
 }
 
-copy_configs (){
+copy_configs() {
     cp .config/* ~/.config -r
     cp .local/* ~/.local/ -r
 }
 
-add_user(){
+add_user() {
     local files=(
         ~/.config/btop/btop.conf
         ~/.config/gtk-2.0/gtkrc
@@ -24,8 +24,8 @@ add_user(){
     done
 }
 
-mkfile() { 
-    mkdir -p -- "$1" && touch -- "$1"/"$2" 
+mkfile() {
+    mkdir -p -- "$1" && touch -- "$1"/"$2"
 }
 
 XDG_CONFIG_HOME="$HOME/.config"
@@ -41,13 +41,13 @@ mk_xdg_dirs() {
     mkdir -p "$XDG_DATA_HOME"/dvdcss
     mkfile "$XDG_CONFIG_HOME"/git "config"
     mkdir -p "$XDG_DATA_HOME"/gnupg
-    chown -R $(whoami):$(whoami) "$XDG_DATA_HOME"/gnupg
+    chown -R "$(whoami)":"$(whoami)" "$XDG_DATA_HOME"/gnupg
     chmod 700 "$XDG_DATA_HOME"/gnupg
     mkdir -p "$XDG_DATA_HOME"/go
     mkdir -p "$XDG_DATA_HOME"/gradle
     mkfile "$XDG_CONFIG_HOME"/gtk-2.0 "gtkrc"
     mkfile "$XDG_STATE_HOME"/zsh "history"
-    mkdir -p  "$XDG_CONFIG_HOME"/ipython
+    mkdir -p "$XDG_CONFIG_HOME"/ipython
     mkdir -p "$XDG_CONFIG_HOME"/kde
     mkfile "$XDG_CACHE_HOME"/less "history"
     mkfile "$XDG_DATA_HOME" "node_repl_history"
