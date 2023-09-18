@@ -102,6 +102,20 @@
 
     // * left side  * //
 
+    "battery": {
+        "bat": "BAT1",
+        "interval": 10,
+        "states": {
+            "warning": 30,
+            "critical": 15
+        },
+        "format": "<span foreground='#b4befe'>{capacity}% {icon} {power} W</span>",
+        "format-charging": "<span foreground='#a6e3a1'>{capacity}% {icon}󱐋</span>",
+        "format-critical": "<span foreground='#f38ba8'>{capacity}% 󱃌 {power} W</span>",
+        "format-icons": ["󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"],
+        "max-length": 25
+    },
+
     "pulseaudio": {
         "scroll-step": 1,
         "reverse-scrolling": 1,

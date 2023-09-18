@@ -26,6 +26,7 @@ window#waybar.hidden {
     margin-right: 10px;
 }
 
+#battery,
 #clock,
 #cpu,
 #memory,
@@ -160,6 +161,11 @@ window#waybar.hidden {
 #idle_inhibitor.activated {
     background-color: @blue;
     color: shade(@crust, 0.9);
+}
+
+#battery {
+    border-radius: 12.6px;
+    padding: 0 10px;
 }
 
 #pulseaudio {
