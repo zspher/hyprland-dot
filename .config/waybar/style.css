@@ -45,6 +45,10 @@ window#waybar.hidden {
     margin: 0;
 }
 
+#workspaces, #battery, #temperature {
+    margin-right: 10px;
+}
+
 #custom-launcher {
     border-radius: 12.6px 0px 0px 12.6px;
     padding: 0 15px;
@@ -52,7 +56,6 @@ window#waybar.hidden {
 }
 
 #workspaces {
-    margin-right: 10px;
     border-radius: 0px 12.6px 12.6px 0px;
     padding: 0;
 }
@@ -66,18 +69,33 @@ window#waybar.hidden {
     border-width: 0px 1px;
 }
 
-#workspaces button > box{
-    margin-bottom: 2px;
+#workspaces button:hover{
+    background-color: @base;
+}
+
+#workspaces button.active {
+    background-color: @surface0;
+}
+
+#workspaces button.active:hover{
+    background-color: @surface1;
 }
 
 #workspaces button:hover, #workspaces button.active {
-    background-color: @base;
     color: @mauve;
+}
+
+#workspaces button > box{
+    margin-bottom: 2px;
 }
 
 #workspaces button.active > box{
     border-radius: 0;
     border-bottom: 3px solid @mauve;
+}
+
+#workspaces button.active:hover > box{
+    border-bottom: 3px solid @base;
 }
 
 #workspaces button:last-child {
@@ -114,8 +132,16 @@ window#waybar.hidden {
     border-width: 0px 1px;
 }
 
-#taskbar button:hover, #taskbar button.active {
+#taskbar button:hover{
     background-color: @base;
+}
+
+#taskbar button.active {
+    background-color: @surface0;
+}
+
+#taskbar button.active:hover{
+    background-color: @surface1;
 }
 
 #taskbar button > box{
@@ -127,6 +153,9 @@ window#waybar.hidden {
     border-bottom: 3px solid @mauve;
 }
 
+#taskbar button.active:hover > box{
+    border-bottom: 3px solid @base;
+}
 #taskbar button:last-child, #taskbar button:last-child:hover {
     border-radius: 5px 12.6px 12.6px 5px;
     padding-right: 10px;
@@ -190,7 +219,6 @@ window#waybar.hidden {
 
 #temperature {
     border-radius: 0px 12.6px 12.6px 0px;
-    margin-right: 10px;
     padding-right: 10px;
     color: @mauve;
 }
