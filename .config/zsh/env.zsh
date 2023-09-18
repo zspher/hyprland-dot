@@ -42,6 +42,7 @@ export MANPAGER="less"
 export MANROFFOPT="-c"
 export LESS='-R --use-color -Dd+r$Du+b$'
 export TERMINAL="kitty"
+export PATH=$PATH:/home/$USER/.local/bin
 
 # theme
 export FZF_DEFAULT_OPTS=" \
