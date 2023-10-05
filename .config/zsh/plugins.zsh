@@ -29,6 +29,8 @@ zinit wait'1a' lucid for \
     "djui/alias-tips" \
     "OMZP::fzf" \
     "hlissner/zsh-autopair" \
+        atinit"
+            zstyle ':zim:termtitle' format '%~'"\
     "zimfw/termtitle" \
         atinit"
             zstyle ':prezto:*:*' color 'yes'
