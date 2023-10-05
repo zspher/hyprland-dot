@@ -16,7 +16,10 @@ source "${ZINIT_HOME}/zinit.zsh" \
   && _comps[zinit]=_zinit
 
 # Prompt
-zinit lucid for "joke/zim-starship"
+zinit lucid for \
+    "joke/zim-starship" \
+    "OMZL::key-bindings.zsh" \
+    "OMZP::fzf"
 
 zinit wait'1a' lucid for \
     "zimfw/environment" \
@@ -25,9 +28,7 @@ zinit wait'1a' lucid for \
             unalias gm
             alias gme='git merge'"\
     "zimfw/git" \
-    "OMZL::key-bindings.zsh" \
     "djui/alias-tips" \
-    "OMZP::fzf" \
     "hlissner/zsh-autopair" \
         atinit"
             zstyle ':zim:termtitle' format '%~'"\
@@ -45,7 +46,7 @@ zinit wait'1a' lucid for \
             alias lt='ll --tree'"\
     "PZTM::utility" \
         atinit"zstyle ':zim:input' double-dot-expand yes" \
-    "zimfw/input" \
+    "zimfw/input"
 
 zinit wait'1b' lucid for \
         atinit"zicompinit; zicdreplay" \
