@@ -44,6 +44,9 @@ export LESS='-R --use-color -Dd+r$Du+b$'
 export TERMINAL="kitty"
 export PATH=$PATH:/home/$USER/.local/bin
 
+export FZF_ALT_C_COMMAND="fd --type d --hidden --exclude .git"
+export FZF_CTRL_T_COMMAND="$FZF_ALT_C_COMMAND --type f"
+
 # theme
 export FZF_DEFAULT_OPTS=" \
 --color=bg+:#313244,bg:#1e1e2e,spinner:#f5e0dc,hl:#f38ba8 \
