@@ -69,3 +69,10 @@ zinit wait'1b' lucid for \
             zstyle ':fzf-tab:complete:_zlua:*' query-string input"\
         atload'zstyle ":completion:*" list-colors "${(s.:.)LS_COLORS}"' \
     "Aloxaf/fzf-tab"
+
+if test -n "$KITTY_INSTALLATION_DIR"; then
+    export KITTY_SHELL_INTEGRATION="enabled"
+    autoload -Uz -- "$KITTY_INSTALLATION_DIR"/shell-integration/zsh/kitty-integration
+    kitty-integration
+    unfunction kitty-integration
+fi
