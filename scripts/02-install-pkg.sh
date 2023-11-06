@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
-[ -z $SCRIPTS_DIR ] && SCRIPTS_DIR="."
-source $SCRIPTS_DIR/util/pkg.sh
+[ -z "$SCRIPTS_DIR" ] && SCRIPTS_DIR="."
+source "$SCRIPTS_DIR"/util/pkg.sh
 
 for p in "${pkg[@]}"; do
     yay -S --noconfirm --needed "$p" --sudoloop
@@ -14,9 +14,9 @@ for p in "${flatpak[@]}"; do
 done
 
 # install anyrun window switcher
-cd ~/Downloads
+cd ~/Downloads || exit
 git clone https://github.com/auctumnus/anyrun-hyprland
-cd anyrun-hyprland
+cd anyrun-hyprland || exit
 cargo build --release
 mkdir -p ~/.config/anyrun/plugins
 cp target/release/libanyrun_hyprland.so ~/.config/anyrun/plugins

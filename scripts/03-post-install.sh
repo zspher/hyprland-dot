@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 
 # sddm theming
-echo "[Theme]\nCurrent=corners" | sudo tee /etc/sddm.conf
+printf "[Theme]\nCurrent=corners" | sudo tee /etc/sddm.conf
 
 sudo sed -E -i \
-    -e  "s/^(Font=).*/\1\"CaskaydiaCove Nerd Font\"/" \
+    -e "s/^(Font=).*/\1\"CaskaydiaCove Nerd Font\"/" \
     -e "s/^(UAPBorderWidth=).*/\1\"2\"/" \
     -e "s/^(FieldBorderWidth=).*/\1\"2\"/" \
     -e "s/^(LoginButtonText=).*/\1\"Login\"/" \
@@ -23,8 +23,6 @@ sudo systemctl enable --now bluetooth.service
 
 # post install
 yay -Y --editmenu --nodiffmenu --devel --save
-
-
 
 # astrovim
 mv ~/.config/nvim ~/.config/nvim.bak
