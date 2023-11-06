@@ -53,7 +53,7 @@ pkg=(
     ffmpegthumbs
     kdegraphics-thumbnailers
     libheif
-    qt5-imageformats 
+    qt5-imageformats
     resvg
     kde-cli-tools
     ranger
@@ -116,7 +116,7 @@ pkg=(
     # security
     polkit-kde-agent
     keepassxc
-    swaylock-effects
+    swaylock-effects-git
     clamtk
     seahorse
     gnome-keyring
