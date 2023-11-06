@@ -17,7 +17,7 @@ list_row='5'
 win_width='400px'
 
 # Options
-layout=$(cat < "$theme" | grep 'USE_ICON' | cut -d'=' -f2)
+layout=$(cat <"$theme" | grep 'USE_ICON' | cut -d'=' -f2)
 if [[ "$layout" == 'NO' ]]; then
     option_1="󰹑 Capture Desktop"
     option_2="󰆞 Capture Area"
@@ -59,7 +59,7 @@ if [[ ! -d "$dir" ]]; then
 fi
 
 # countdown
-countdown () {
+countdown() {
     local ID=0
     for sec in $(seq "$1" -1 1); do
         ID=$(notify-send -t 1000 -r "$ID" "Taking shot in : $sec" -p)
@@ -67,30 +67,30 @@ countdown () {
     done
 }
 
-notify (){
+notify() {
     notify-send -i "$dir/$file" "Screenshot Saved" "$dir/$file"
 }
 
 # take shots
-shotnow () {
+shotnow() {
     sleep 0.5 && grimblast -f copysave screen "$dir/$file"
 }
 
-shot5 () {
+shot5() {
     countdown '5'
     sleep 1 && grimblast -f copysave screen "$dir/$file"
 }
 
-shot10 () {
+shot10() {
     countdown '10'
     sleep 1 && grimblast -f copysave screen "$dir/$file"
 }
 
-shotwin () {
+shotwin() {
     sleep 1 && grimblast -f copysave active "$dir/$file"
 }
 
-shotarea () {
+shotarea() {
     sleep 1 && grimblast -f copysave area "$dir/$file"
 }
 
@@ -130,5 +130,3 @@ case ${chosen} in
         run_cmd --opt5
         ;;
 esac
-
-
