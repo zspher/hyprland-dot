@@ -3,9 +3,10 @@ FullScreen=false
 
 [General]
 LockSidebar=true
-ShowSidebar=true
+ShowSidebar=false
 
 [MainWindow]
+2 screens: Window-Maximized=true
 ToolBarsMovable=Disabled
 
 [Notification Messages]

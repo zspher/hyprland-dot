@@ -1,6 +1,8 @@
 [Added Associations]
+application/epub+zip=calibre-ebook-viewer.desktop;
 application/json=nvim.desktop;
 application/pdf=org.kde.okular.desktop;
+application/vnd.amazon.mobi8-ebook=calibre-ebook-viewer.desktop;okularApplication_mobi.desktop;calibre-ebook-edit.desktop;libreoffice-writer.desktop;calibre-gui.desktop;
 application/x-visual-studio-code-workspace=code.desktop;
 application/x-wine-extension-ini=nvim.desktop;
 image/avif=qimgv.desktop;
@@ -28,9 +30,11 @@ x-scheme-handler/mailto=thunderbird.desktop;
 x-scheme-handler/tel=org.kde.kdeconnect.handler.desktop;
 
 [Default Applications]
+application/epub+zip=calibre-ebook-viewer.desktop;
 application/json=nvim.desktop;
 application/lrf=calibre-lrfviewer.desktop
 application/pdf=org.kde.okular.desktop;
+application/vnd.amazon.mobi8-ebook=calibre-ebook-viewer.desktop;
 application/x-visual-studio-code-workspace=code.desktop;
 application/x-wine-extension-ini=nvim.desktop;
 image/avif=qimgv.desktop;
