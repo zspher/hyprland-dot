@@ -7,3 +7,5 @@ done << EOF
     plugins
     options
 EOF
+
+export PATH=/home/$USER/.local/bin:$HOME/.local/share/gem/ruby/3.0.0/bin:$PATH
