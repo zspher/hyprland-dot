@@ -36,6 +36,9 @@ XDG_CACHE_HOME="$HOME/.cache"
 mk_xdg_dirs() {
     mkdir -p "$XDG_CONFIG_HOME"/java
     mkfile "$XDG_DATA_HOME" "z"
+    mkdir -p "$XDG_CACHE_HOME"/bundle
+    mkdir -p "$XDG_CONFIG_HOME"/bundle
+    mkdir -p "$XDG_DATA_HOME"/bundle
     mkdir -p "$XDG_DATA_HOME"/cargo
     mkdir -p "$XDG_CACHE_HOME"/nv
     mkdir -p "$XDG_DATA_HOME"/dvdcss
@@ -52,6 +55,8 @@ mk_xdg_dirs() {
     mkfile "$XDG_CACHE_HOME"/less "history"
     mkfile "$XDG_DATA_HOME" "node_repl_history"
     mkfile "$XDG_CONFIG_HOME"/npm "npmrc"
+    mkdir -p "$XDG_CACHE_HOME"/NuGetPackages
+    mkdir -p "$XDG_CONFIG_HOME"/omnisharp
     mkdir -p "$XDG_DATA_HOME"/platformio
     mkfile "$XDG_CONFIG_HOME"/pulse "cookie"
     mkfile "$XDG_CONFIG_HOME"/openssl "rnd"

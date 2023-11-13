@@ -5,6 +5,9 @@ export XDG_CACHE_HOME="$HOME/.cache"
 
 export _JAVA_OPTIONS=-Djava.util.prefs.userRoot="$XDG_CONFIG_HOME"/java
 export _Z_DATA="$XDG_DATA_HOME/z"
+export BUNDLE_USER_CACHE="$XDG_CACHE_HOME"/bundle
+export BUNDLE_USER_CONFIG="$XDG_CONFIG_HOME"/bundle
+export BUNDLE_USER_PLUGIN="$XDG_DATA_HOME"/bundle
 export CARGO_HOME="$XDG_DATA_HOME"/cargo
 export CUDA_CACHE_PATH="$XDG_CACHE_HOME"/nv
 export DVDCSS_CACHE="$XDG_DATA_HOME"/dvdcss
@@ -18,6 +21,8 @@ export KDEHOME="$XDG_CONFIG_HOME"/kde
 export LESSHISTFILE="$XDG_CACHE_HOME"/less/history
 export NODE_REPL_HISTORY="$XDG_DATA_HOME"/node_repl_history
 export NPM_CONFIG_USERCONFIG="$XDG_CONFIG_HOME"/npm/npmrc
+export NUGET_PACKAGES="$XDG_CACHE_HOME"/NuGetPackages
+export OMNISHARPHOME="$XDG_CONFIG_HOME"/omnisharp
 export PLATFORMIO_CORE_DIR="$XDG_DATA_HOME"/platformio
 export RANDFILE="$XDG_CONFIG_HOME/openssl/rnd"
 export RUSTUP_HOME="$XDG_DATA_HOME"/rustup
