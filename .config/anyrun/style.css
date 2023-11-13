@@ -1,5 +1,5 @@
 #window {
-  background: rgba(17, 17, 27, 0.5);
+  background: alpha(#a6adc8, 0.15);
 }
 
 box#main {

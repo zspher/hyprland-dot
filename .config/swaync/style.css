@@ -11,58 +11,112 @@
   background-color: #181825;
   color: #cdd6f4;
   padding: 0;
-  border: 1px solid #313244;
 }
 
-.floating-notifications.background .notification-row .notification-background .notification.low {
-  background-color: #1e1e2e;
+.floating-notifications.background
+  .notification-row
+  .notification-background
+  .notification.low {
+  border: 2px solid alpha(#89b4fa, 0.5);
 }
 
-.floating-notifications.background .notification-row .notification-background .notification {
+.floating-notifications.background
+  .notification-row
+  .notification-background
+  .notification {
   padding: 7px;
   border-radius: 12.6px;
+  border: 2px solid #89b4fa;
 }
 
-.floating-notifications.background .notification-row .notification-background .notification.critical {
-  box-shadow: inset 0 0 7px 0 #f38ba8;
+.floating-notifications.background
+  .notification-row
+  .notification-background
+  .notification.critical {
+  border: 2px solid #f38ba8;
 }
 
-.floating-notifications.background .notification-row .notification-background .notification .notification-content {
+.floating-notifications.background
+  .notification-row
+  .notification-background
+  .notification
+  .notification-content {
   margin: 7px;
 }
 
-.floating-notifications.background .notification-row .notification-background .notification .notification-content .summary {
+.floating-notifications.background
+  .notification-row
+  .notification-background
+  .notification
+  .notification-content
+  .summary {
   color: #cdd6f4;
 }
 
-.floating-notifications.background .notification-row .notification-background .notification .notification-content .time {
+.floating-notifications.background
+  .notification-row
+  .notification-background
+  .notification
+  .notification-content
+  .time {
   color: #a6adc8;
 }
 
-.floating-notifications.background .notification-row .notification-background .notification .notification-content .body {
+.floating-notifications.background
+  .notification-row
+  .notification-background
+  .notification
+  .notification-content
+  .body {
   color: #cdd6f4;
 }
 
-.floating-notifications.background .notification-row .notification-background .notification > *:last-child > * {
+.floating-notifications.background
+  .notification-row
+  .notification-background
+  .notification
+  > *:last-child
+  > * {
   min-height: 3.4em;
 }
 
-.floating-notifications.background .notification-row .notification-background .notification > *:last-child > * .notification-action {
+.floating-notifications.background
+  .notification-row
+  .notification-background
+  .notification
+  > *:last-child
+  > *
+  .notification-action {
   border-radius: 7px;
   color: #cdd6f4;
   background-color: #313244;
   margin: 7px;
 }
 
-.floating-notifications.background .notification-row .notification-background .notification > *:last-child > * .notification-action:hover {
+.floating-notifications.background
+  .notification-row
+  .notification-background
+  .notification
+  > *:last-child
+  > *
+  .notification-action:hover {
   background-color: #45475a;
 }
 
-.floating-notifications.background .notification-row .notification-background .notification > *:last-child > * .notification-action:active {
+.floating-notifications.background
+  .notification-row
+  .notification-background
+  .notification
+  > *:last-child
+  > *
+  .notification-action:active {
   background-color: #585b70;
 }
 
-.floating-notifications.background .notification-row .notification-background .close-button {
+.floating-notifications.background
+  .notification-row
+  .notification-background
+  .close-button {
   margin: 7px;
   padding: 2px;
   border-radius: 6.3px;
@@ -70,11 +124,17 @@
   background-color: #f38ba8;
 }
 
-.floating-notifications.background .notification-row .notification-background .close-button:hover {
+.floating-notifications.background
+  .notification-row
+  .notification-background
+  .close-button:hover {
   background-color: #eba0ac;
 }
 
-.floating-notifications.background .notification-row .notification-background .close-button:active {
+.floating-notifications.background
+  .notification-row
+  .notification-background
+  .close-button:active {
   background-color: #f5c2e7;
 }
 
@@ -86,78 +146,125 @@
   border: 1px solid #313244;
 }
 
-.control-center .widget-title {
+.control-center .widget-title > label {
   color: #cdd6f4;
-  font-size: 1.3em;
+  font-size: 1.2rem;
+  font-weight: bold;
 }
 
-.control-center .widget-title button {
+.control-center .control-center-clear-all {
   border-radius: 7px;
   color: #cdd6f4;
   background-color: #313244;
   padding: 8px;
 }
 
-.control-center .widget-title button:hover {
+.control-center .control-center-clear-all:hover {
   background-color: #45475a;
 }
 
-.control-center .widget-title button:active {
+.control-center .control-center-clear-all:active {
   background-color: #585b70;
 }
 
 .control-center .notification-row .notification-background {
   border-radius: 7px;
   color: #cdd6f4;
-  background-color: #313244;
+  background-color: #1e1e2e;
   margin-top: 14px;
 }
 
 .control-center .notification-row .notification-background .notification {
   padding: 7px;
   border-radius: 7px;
+  border: 2px solid #89b4fa;
 }
 
 .control-center .notification-row .notification-background .notification.low {
-  background-color: #1e1e2e;
+  border: 2px solid alpha(#89b4fa, 0.5);
 }
 
-.control-center .notification-row .notification-background .notification.critical {
-  box-shadow: inset 0 0 7px 0 #f38ba8;
+.control-center
+  .notification-row
+  .notification-background
+  .notification.critical {
+  border: 2px solid #f38ba8;
 }
 
-.control-center .notification-row .notification-background .notification .notification-content {
+.control-center
+  .notification-row
+  .notification-background
+  .notification
+  .notification-content {
   margin: 7px;
 }
 
-.control-center .notification-row .notification-background .notification .notification-content .summary {
+.control-center
+  .notification-row
+  .notification-background
+  .notification
+  .notification-content
+  .summary {
   color: #cdd6f4;
 }
 
-.control-center .notification-row .notification-background .notification .notification-content .time {
+.control-center
+  .notification-row
+  .notification-background
+  .notification
+  .notification-content
+  .time {
   color: #a6adc8;
 }
 
-.control-center .notification-row .notification-background .notification .notification-content .body {
+.control-center
+  .notification-row
+  .notification-background
+  .notification
+  .notification-content
+  .body {
   color: #cdd6f4;
 }
 
-.control-center .notification-row .notification-background .notification > *:last-child > * {
+.control-center
+  .notification-row
+  .notification-background
+  .notification
+  > *:last-child
+  > * {
   min-height: 3.4em;
 }
 
-.control-center .notification-row .notification-background .notification > *:last-child > * .notification-action {
+.control-center
+  .notification-row
+  .notification-background
+  .notification
+  > *:last-child
+  > *
+  .notification-action {
   border-radius: 7px;
   color: #cdd6f4;
   background-color: #6c7086;
   margin: 7px;
 }
 
-.control-center .notification-row .notification-background .notification > *:last-child > * .notification-action:hover {
+.control-center
+  .notification-row
+  .notification-background
+  .notification
+  > *:last-child
+  > *
+  .notification-action:hover {
   background-color: #7f849c;
 }
 
-.control-center .notification-row .notification-background .notification > *:last-child > * .notification-action:active {
+.control-center
+  .notification-row
+  .notification-background
+  .notification
+  > *:last-child
+  > *
+  .notification-action:active {
   background-color: #9399b2;
 }
 
@@ -173,7 +280,10 @@
   background-color: #eba0ac;
 }
 
-.control-center .notification-row .notification-background .close-button:active {
+.control-center
+  .notification-row
+  .notification-background
+  .close-button:active {
   background-color: #f5c2e7;
 }
 
@@ -187,12 +297,15 @@
   color: #cdd6f4;
 }
 
-.summary, .time {
-    font-weight: bold;
-    font-size: medium;
+.summary,
+.time {
+  font-weight: bold;
+  font-size: medium;
 }
 
-progressbar, progress, trough {
+progressbar,
+progress,
+trough {
   border-radius: 12.6px;
 }
 
@@ -220,6 +333,7 @@ trough {
 .widget-dnd {
   margin: 0px;
   font-size: 1.1rem;
+  font-weight: bold;
 }
 
 .control-center-dnd {
@@ -230,17 +344,25 @@ trough {
 }
 
 .control-center-dnd:checked {
+  background-color: #89b4fa;
+}
+.control-center-dnd:checked slider {
   background: #313244;
 }
 
 .control-center-dnd slider {
   background: #45475a;
   border-radius: 8px;
-  min-height: 24px;
-  min-width: 24px;
+  min-height: 22px;
+  min-width: 22px;
+  margin: 2px;
 }
 .control-center-dnd slider:hover {
-    background-color: #585b70;
+  background-color: #585b70;
+}
+
+.control-center-dnd:checked image {
+  color: #313244;
 }
 
 /* Mpris widget */
@@ -264,9 +386,13 @@ trough {
   background-color: #585b70;
 }
 
+.widget-mpris button:disabled {
+  opacity: 0.5;
+}
+
 .widget-mpris-player {
   padding: 8px;
-  margin: 5px;
+  margin: 0 5px;
   background-color: #313244;
   border-radius: 12.6px;
   color: #cdd6f4;
@@ -274,9 +400,9 @@ trough {
 
 .widget-mpris-title {
   font-weight: bold;
-  font-size: 1.25rem;
+  font-size: 1.2rem;
 }
 
 .widget-mpris-subtitle {
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
