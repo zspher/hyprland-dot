@@ -129,7 +129,7 @@ pkg=(
     waybar-hyprland-git # waybar-hyprland-git
     rofi-lbonn-wayland
     anyrun-git
-    wpaperd
+    swww
     swaync
     swayidle
 
