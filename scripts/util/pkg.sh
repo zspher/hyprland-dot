@@ -68,7 +68,7 @@ pkg=(
     popsicle
     font-manager
     blueman
-    clightd
+    brightnessctl
     wlr-randr
     nwg-display
     filelight
