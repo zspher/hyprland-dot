@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 HYPRGAMEMODE=$(hyprctl getoption animations:enabled | awk 'NR==2{print $2}')
-if [ "$HYPRGAMEMODE" = 1 ] ; then
+if [ "$HYPRGAMEMODE" = 1 ]; then
     hyprctl --batch "\
         keyword animations:enabled 0;\
         keyword decoration:drop_shadow 0;\

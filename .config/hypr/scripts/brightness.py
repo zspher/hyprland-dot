@@ -4,21 +4,25 @@
 # busctl - sadly only option (for now)
 
 
-from gi.repository import Notify, GLib
 import argparse
 import subprocess
+
 import gi
-gi.require_version('Notify', '0.7')
+from gi.repository import GLib, Notify
+
+gi.require_version("Notify", "0.7")
 
 
 def init_argparse():
     parser = argparse.ArgumentParser(
-        description='brightness control with notifications')
+        description="brightness control with notifications"
+    )
     brightness_slider = parser.add_mutually_exclusive_group()
     brightness_slider.add_argument(
         "-i", "--increase", type=float, dest="brightness_up")
     brightness_slider.add_argument(
-        "-d", "--decrease", type=float, dest="brightness_down")
+        "-d", "--decrease", type=float, dest="brightness_down"
+    )
     return parser
 
 
@@ -31,8 +35,9 @@ def get_brightness() -> int:
     #                             "org.clightd.clightd.Backlight2", "Get"], capture_output=True, text=True)
     # brightness = float(brightness.stdout.split()[3])*100
     brightness = subprocess.run(
-        ["brightnessctl", "i", "-m"], capture_output=True, text=True)
-    brightness = brightness.stdout.split(",")[3].replace('%', '')
+        ["brightnessctl", "i", "-m"], capture_output=True, text=True
+    )
+    brightness = brightness.stdout.split(",")[3].replace("%", "")
     print(brightness)
     return int(brightness)
 
@@ -59,9 +64,11 @@ def notify_brightness(brightness: int):
         nf.update("Brightness", f"{brightness}%", "low-brightness")
     else:
         nf.update("Brightness", f"{brightness}%", "high-brightness")
-    nf.set_hint("value", GLib.Variant('i', brightness))
-    nf.set_hint("x-canonical-private-synchronous",
-                GLib.Variant('s', "brightness-notification"))
+    nf.set_hint("value", GLib.Variant("i", brightness))
+    nf.set_hint(
+        "x-canonical-private-synchronous", GLib.Variant(
+            "s", "brightness-notification")
+    )
     nf.set_urgency(Notify.Urgency.LOW)
     nf.set_timeout(1000)
     nf.show()
